@@ -10,7 +10,16 @@ public class Second_Hadeel extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second__hadeel);
+
+	Intent information = getIntent();
+	value = info.getStringExtra("value");
 	}
+
+	public void clickNext(View view){
+
+	Intent intent = new Intent(this, Third_Hala.class);
+		intent.putExtra("value", value);
+		startActivity(intent);
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
