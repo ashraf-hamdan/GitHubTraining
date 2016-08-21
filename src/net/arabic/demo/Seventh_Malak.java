@@ -4,21 +4,24 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class Seventh_Malak extends Activity {
-
+	String value ;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_seventh__malak);
 		
 		Intent info = getIntent();
-        String value = info.getStringExtra("value");
+        value = info.getStringExtra("value");
 
+	}
+	public void GoToNext(View view) 
+	{
         Intent intent = new Intent(this, Eighth_Bana.class);
         intent.putExtra("value", value);
         startActivity(intent);
-
 	}
 
 	@Override
