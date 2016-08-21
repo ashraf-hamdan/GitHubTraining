@@ -10,6 +10,14 @@ public class Third_Hala extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_third__hala);
+
+        Intent info = getIntent();
+        String value = info.getStringExtra("value");
+
+        Intent intent = new Intent(this, Fourth_Malath.class);
+        intent.putExtra("value", value);
+        startActivity(intent);
+
 	}
 
 	@Override
