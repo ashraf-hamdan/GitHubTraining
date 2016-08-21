@@ -2,6 +2,7 @@ package net.arabic.demo;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 
 public class Third_Hala extends Activity {

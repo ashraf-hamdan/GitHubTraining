@@ -2,6 +2,7 @@ package net.arabic.demo;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 
 public class Seventh_Malak extends Activity {
@@ -10,6 +11,14 @@ public class Seventh_Malak extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_seventh__malak);
+		
+		Intent info = getIntent();
+        String value = info.getStringExtra("value");
+
+        Intent intent = new Intent(this, Eighth_Bana.class);
+        intent.putExtra("value", value);
+        startActivity(intent);
+
 	}
 
 	@Override
