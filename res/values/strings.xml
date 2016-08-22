@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="send">Send Data</string>
+    <string name="title_activity_second__hadeel">Second_Hadeel</string>
+    <string name="title_activity_third__hala">Third_Hala</string>
+    <string name="title_activity_fourth__malath">Fourth_Malath</string>
+    <string name="title_activity_fifth__duaa">Fifth_Duaa</string>
+    <string name="title_activity_sixth__fayrooz">Sixth_Fayrooz</string>
+    <string name="title_activity_seventh__malak">Seventh_Malak</string>
+    <string name="title_activity_eighth__bana">Eighth_Bana</string>
+    <string name="title_activity_ninth__razan">Ninth_Razan</string>
+
+</resources>

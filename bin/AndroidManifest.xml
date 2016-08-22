@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.arabic.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.arabic.demo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Second_Hadeel"
+            android:label="@string/title_activity_second__hadeel" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Third_Hala"
+            android:label="@string/title_activity_third__hala" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Fourth_Malath"
+            android:label="@string/title_activity_fourth__malath" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Fifth_Duaa"
+            android:label="@string/title_activity_fifth__duaa" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Sixth_Fayrooz"
+            android:label="@string/title_activity_sixth__fayrooz" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Seventh_Malak"
+            android:label="@string/title_activity_seventh__malak" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Eighth_Bana"
+            android:label="@string/title_activity_eighth__bana" >
+        </activity>
+        <activity
+            android:name="net.arabic.demo.Ninth_Razan"
+            android:label="@string/title_activity_ninth__razan" >
+        </activity>
+    </application>
+
+</manifest>
