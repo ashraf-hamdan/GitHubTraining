@@ -15,17 +15,12 @@ public class Sixth_Fayrooz extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sixth__fayrooz);
-		
-		
+
 		Bundle bundle = getIntent().getExtras();
 		if (bundle != null) {
-		    value = bundle.getString("value");
+			value = bundle.getString("value");
 		}
-		
-		
-		
-		
-		
+
 	}
 
 	@Override
@@ -35,29 +30,20 @@ public class Sixth_Fayrooz extends Activity {
 		return true;
 	}
 
-	
 	public void click(View view) {
 		if (view.getId() == R.id.btn_next) {
 			nextclass();
 		}
 
 	}
-	
-	public void nextclass(){
-		
 
-		Intent i = new Intent(this,Seventh_Malak.class);
+	public void nextclass() {
+
+		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
+		Intent i = new Intent(this, Seventh_Malak.class);
 		i.putExtra("value", value);
 		startActivity(i);
-		
-		
-	
-		
-		
+
 	}
-	
-	
-	
-	
-	
+
 }

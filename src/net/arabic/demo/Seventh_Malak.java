@@ -5,23 +5,26 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 public class Seventh_Malak extends Activity {
-	String value ;
+	String value;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_seventh__malak);
-		
+
 		Intent info = getIntent();
-        value = info.getStringExtra("value");
+		value = info.getStringExtra("value");
 
 	}
-	public void GoToNext(View view) 
-	{
-        Intent intent = new Intent(this, Eighth_Bana.class);
-        intent.putExtra("value", value);
-        startActivity(intent);
+
+	public void GoToNext(View view) {
+		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(this, Eighth_Bana.class);
+		intent.putExtra("value", value);
+		startActivity(intent);
 	}
 
 	@Override

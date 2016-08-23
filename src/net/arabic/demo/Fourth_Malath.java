@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 public class Fourth_Malath extends Activity {
 	String value;
@@ -18,14 +19,8 @@ public class Fourth_Malath extends Activity {
 
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.fourth__malath, menu);
-		return true;
-	}
-
 	public void next(View v) {
+		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
 		Intent intent = new Intent(this, Fifth_Duaa.class);
 		intent.putExtra("value", value);
 		startActivity(intent);

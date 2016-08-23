@@ -11,34 +11,20 @@ import android.widget.Toast;
 
 public class Ninth_Razan extends Activity {
 	String value;
-	
-	Button show,get;
+
+	Button show, get;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ninth__razan);
-		
-		Intent info=this.getIntent();
-		String x = info.getExtras().getString("value");
+
+		Intent info = this.getIntent();
+		value = info.getExtras().getString("value");
 	}
-	public void get(View view){
-		Intent intent = new Intent(this,Eighth_Bana.class);
-		intent.getExtras();
-		startActivity(intent);
-		
-	}
-	public void btn_show(String DATA,String message){
-		
-		
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		
-		builder.setCancelable(true);
-		builder.setTitle(DATA);
-		
-		builder.show();
-		
-		Toast.makeText(getBaseContext(), value, Toast.LENGTH_LONG).show();
+
+	public void get(View view) {
+		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
 	}
 
 	@Override

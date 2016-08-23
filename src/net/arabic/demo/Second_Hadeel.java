@@ -5,22 +5,25 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 public class Second_Hadeel extends Activity {
 
 	String value;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second__hadeel);
 
-	Intent information = this.getIntent();
-	value = information.getStringExtra("value");
+		Intent information = this.getIntent();
+		value = information.getStringExtra("value");
 	}
 
-	public void clickNext(View view){
+	public void clickNext(View view) {
 
-	Intent intent = new Intent(this, Third_Hala.class);
+		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(this, Third_Hala.class);
 		intent.putExtra("value", value);
 		startActivity(intent);
 	}
