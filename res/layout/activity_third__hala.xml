@@ -15,7 +15,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="115dp"
-        android:text="@string/Next"
+        android:text="@string/send"
         android:onClick="clickNext" />
 
 </RelativeLayout>
