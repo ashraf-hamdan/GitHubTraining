@@ -19,7 +19,6 @@ public class Second_Hadeel extends Activity {
 		Intent information = this.getIntent();
 		value = information.getStringExtra("value");
 	}
-
 	public void clickNext(View view) {
 
 		Toast.makeText(getBaseContext(), value, Toast.LENGTH_SHORT).show();
@@ -27,12 +26,10 @@ public class Second_Hadeel extends Activity {
 		intent.putExtra("value", value);
 		startActivity(intent);
 	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.second__hadeel, menu);
 		return true;
 	}
-
 }
